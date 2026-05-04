@@ -561,16 +561,16 @@ cite {
   position: absolute;
   top: 3px;
   left: 0;
-  width: 20px;
+  width: 24px;
   height: 20px;
   border-radius: 999px;
   background: var(--mint);
   color: #16785e;
-  content: "✓";
+  content: "OK";
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.76rem;
+  font-size: 0.62rem;
   font-weight: 900;
 }
 
