@@ -652,16 +652,29 @@ cite {
   font-weight: 800;
 }
 
+.contact-form label span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.contact-form .hidden-field {
+  display: none;
+}
+
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 16px;
+  background: white;
   color: var(--ink);
   padding: 13px 14px;
 }
 
 .contact-form input:focus,
+.contact-form select:focus,
 .contact-form textarea:focus {
   outline: 3px solid rgba(39, 110, 241, 0.18);
   border-color: var(--blue);

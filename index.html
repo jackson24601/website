@@ -281,9 +281,13 @@
               reply with next steps and session availability.
             </p>
           </div>
-          <form class="contact-form" action="mailto:hello@speakwellcoaching.com" method="post" enctype="text/plain">
+          <form class="contact-form" action="https://formsubmit.co/westerncivpodcast@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="New tutoring inquiry from SpeakWell Coaching">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
             <label>
-              Name
+              Parent or student name
               <input type="text" name="name" autocomplete="name" required>
             </label>
             <label>
@@ -291,11 +295,25 @@
               <input type="email" name="email" autocomplete="email" required>
             </label>
             <label>
+              Phone number <span>optional</span>
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>
+              Student level
+              <select name="student-level" required>
+                <option value="">Select one</option>
+                <option value="Elementary school">Elementary school</option>
+                <option value="Middle school">Middle school</option>
+                <option value="High school">High school</option>
+                <option value="College or adult">College or adult</option>
+              </select>
+            </label>
+            <label>
               What are you preparing for?
               <textarea name="message" rows="5" required></textarea>
             </label>
             <button class="button button-primary" type="submit">Request a call</button>
-            <p class="form-note">Prefer email? Write to <a href="mailto:hello@speakwellcoaching.com">hello@speakwellcoaching.com</a>.</p>
+            <p class="form-note">Responses are sent to <a href="mailto:westerncivpodcast@gmail.com">westerncivpodcast@gmail.com</a>.</p>
           </form>
         </div>
       </section>
