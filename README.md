@@ -1,4 +1,4 @@
-# SpeakWell Coaching Website
+# Dallas Speech and Debate Coaching Website
 
 A static marketing site for public speaking and speech competition tutoring.
 

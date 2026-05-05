@@ -188,12 +188,6 @@ textarea {
   background: var(--blue-dark);
 }
 
-.button-secondary {
-  background: white;
-  border: 1px solid var(--line);
-  color: var(--navy);
-}
-
 .section {
   padding: 82px 0;
 }
@@ -247,12 +241,6 @@ h3 {
 
 p {
   color: var(--muted);
-}
-
-.hero-copy {
-  max-width: 680px;
-  margin: 24px 0 0;
-  font-size: clamp(1.08rem, 2vw, 1.28rem);
 }
 
 .hero-actions {
@@ -393,25 +381,18 @@ p {
   margin-bottom: 38px;
 }
 
-.outcome-grid,
 .competition-grid,
 .event-family-grid,
 .steps,
 .testimonial-grid,
-.package-grid {
+ .testimonial-grid {
   display: grid;
   gap: 18px;
 }
 
-.outcome-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.outcome-grid article,
 .service-list article,
 .steps article,
 .testimonial-grid blockquote,
-.package-card,
 .faq-list details {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -419,15 +400,12 @@ p {
   box-shadow: 0 18px 48px rgba(22, 38, 63, 0.08);
 }
 
-.outcome-grid article,
 .service-list article,
 .steps article,
-.testimonial-grid blockquote,
-.package-card {
+.testimonial-grid blockquote {
   padding: 28px;
 }
 
-.icon,
 .steps span {
   display: inline-flex;
   align-items: center;
@@ -577,64 +555,6 @@ cite {
   color: var(--muted);
   font-style: normal;
   font-weight: 800;
-}
-
-.package-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.package-card {
-  position: relative;
-}
-
-.package-card.featured {
-  border-color: rgba(39, 110, 241, 0.28);
-  transform: translateY(-10px);
-}
-
-.badge {
-  display: inline-flex;
-  margin: 0 0 14px;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: var(--gold);
-  color: var(--navy);
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.package-card ul {
-  display: grid;
-  gap: 11px;
-  margin: 22px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.package-card li {
-  position: relative;
-  padding-left: 30px;
-  color: var(--ink);
-  font-weight: 700;
-}
-
-.package-card li::before {
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 24px;
-  height: 20px;
-  border-radius: 999px;
-  background: var(--mint);
-  color: #16785e;
-  content: "OK";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.62rem;
-  font-weight: 900;
 }
 
 .faq-list {
@@ -798,15 +718,9 @@ cite {
     order: -1;
   }
 
-  .outcome-grid,
   .event-family-grid,
-  .steps,
-  .package-grid {
+  .steps {
     grid-template-columns: 1fr;
-  }
-
-  .package-card.featured {
-    transform: none;
   }
 }
 
@@ -829,7 +743,6 @@ cite {
     font-size: clamp(2.7rem, 16vw, 4.4rem);
   }
 
-  .hero-stats,
   .competition-grid,
   .testimonial-grid {
     grid-template-columns: 1fr;
