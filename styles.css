@@ -395,6 +395,7 @@ p {
 
 .outcome-grid,
 .competition-grid,
+.event-family-grid,
 .steps,
 .testimonial-grid,
 .package-grid {
@@ -500,6 +501,53 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.events {
+  background:
+    radial-gradient(circle at top right, rgba(39, 110, 241, 0.12), transparent 28rem),
+    #fffdf8;
+}
+
+.event-family-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.event-family {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  box-shadow: 0 18px 48px rgba(22, 38, 63, 0.08);
+}
+
+.event-family p {
+  margin-bottom: 0;
+}
+
+.event-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.event-tags li {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(39, 110, 241, 0.08);
+  color: var(--blue-dark);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.source-note {
+  margin: 24px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .steps {
@@ -751,6 +799,7 @@ cite {
   }
 
   .outcome-grid,
+  .event-family-grid,
   .steps,
   .package-grid {
     grid-template-columns: 1fr;
